@@ -13,6 +13,7 @@
 		633C5A551FEE845000BA66CB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633C5A541FEE845000BA66CB /* LoginVC.swift */; };
 		633C5A571FEE86FC00BA66CB /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633C5A561FEE86FC00BA66CB /* CreateAccountVC.swift */; };
 		634FEAB61FEECF1F009C38C0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634FEAB41FEEB8DD009C38C0 /* Alamofire.framework */; };
+		634FEAB81FEF0AD9009C38C0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634FEAB71FEF0AD9009C38C0 /* RoundedButton.swift */; };
 		636966631FEC8E6B007567E8 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636966621FEC8E6B007567E8 /* ChatVC.swift */; };
 		636966651FEC8E7B007567E8 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636966641FEC8E7B007567E8 /* ChannelVC.swift */; };
 		63957BB51FEEAD2F00BC9407 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63957BB41FEEAD2F00BC9407 /* AuthService.swift */; };
@@ -32,6 +33,7 @@
 		633C5A541FEE845000BA66CB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		633C5A561FEE86FC00BA66CB /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		634FEAB41FEEB8DD009C38C0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/Smack-awrdycuzjoznglcisqwnxecrnbqu/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		634FEAB71FEF0AD9009C38C0 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		636966621FEC8E6B007567E8 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		636966641FEC8E7B007567E8 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		63957BB41FEEAD2F00BC9407 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				6314B8E61FECB4990050D88B /* GradientView.swift */,
+				634FEAB71FEF0AD9009C38C0 /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6314B8E31FEC9DA10050D88B /* SWRevealViewController.m in Sources */,
+				634FEAB81FEF0AD9009C38C0 /* RoundedButton.swift in Sources */,
 				636966631FEC8E6B007567E8 /* ChatVC.swift in Sources */,
 				633C5A571FEE86FC00BA66CB /* CreateAccountVC.swift in Sources */,
 				63957BB51FEEAD2F00BC9407 /* AuthService.swift in Sources */,
