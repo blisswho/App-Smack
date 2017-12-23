@@ -12,8 +12,10 @@
 		633C5A531FEE7DBC00BA66CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633C5A521FEE7DBC00BA66CB /* Constants.swift */; };
 		633C5A551FEE845000BA66CB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633C5A541FEE845000BA66CB /* LoginVC.swift */; };
 		633C5A571FEE86FC00BA66CB /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633C5A561FEE86FC00BA66CB /* CreateAccountVC.swift */; };
+		634FEAB61FEECF1F009C38C0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634FEAB41FEEB8DD009C38C0 /* Alamofire.framework */; };
 		636966631FEC8E6B007567E8 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636966621FEC8E6B007567E8 /* ChatVC.swift */; };
 		636966651FEC8E7B007567E8 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636966641FEC8E7B007567E8 /* ChannelVC.swift */; };
+		63957BB51FEEAD2F00BC9407 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63957BB41FEEAD2F00BC9407 /* AuthService.swift */; };
 		63FD50ED1FE9EE51005D7D6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FD50EC1FE9EE51005D7D6F /* AppDelegate.swift */; };
 		63FD50F21FE9EE51005D7D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FD50F01FE9EE51005D7D6F /* Main.storyboard */; };
 		63FD50F41FE9EE51005D7D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FD50F31FE9EE51005D7D6F /* Assets.xcassets */; };
@@ -29,8 +31,10 @@
 		633C5A521FEE7DBC00BA66CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		633C5A541FEE845000BA66CB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		633C5A561FEE86FC00BA66CB /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		634FEAB41FEEB8DD009C38C0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/Smack-awrdycuzjoznglcisqwnxecrnbqu/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		636966621FEC8E6B007567E8 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		636966641FEC8E7B007567E8 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		63957BB41FEEAD2F00BC9407 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		63FD50E91FE9EE51005D7D6F /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FD50EC1FE9EE51005D7D6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63FD50F11FE9EE51005D7D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634FEAB61FEECF1F009C38C0 /* Alamofire.framework in Frameworks */,
 				EF50987BAAB41712AB298EA0 /* Pods_Smack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +62,7 @@
 		4B54DD54C8BE6EEF46605F92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				634FEAB41FEEB8DD009C38C0 /* Alamofire.framework */,
 				AC197F55E78417743EA01DF7 /* Pods_Smack.framework */,
 			);
 			name = Frameworks;
@@ -106,6 +112,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		63957BB31FEEAD1600BC9407 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				63957BB41FEEAD2F00BC9407 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		63FD50E01FE9EE51005D7D6F = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +141,7 @@
 		63FD50EB1FE9EE51005D7D6F /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				63957BB31FEEAD1600BC9407 /* Services */,
 				633C5A511FEE7D9600BA66CB /* Utilities */,
 				636966611FEC8E40007567E8 /* Model */,
 				636966601FEC8E3A007567E8 /* View */,
@@ -276,6 +291,7 @@
 				6314B8E31FEC9DA10050D88B /* SWRevealViewController.m in Sources */,
 				636966631FEC8E6B007567E8 /* ChatVC.swift in Sources */,
 				633C5A571FEE86FC00BA66CB /* CreateAccountVC.swift in Sources */,
+				63957BB51FEEAD2F00BC9407 /* AuthService.swift in Sources */,
 				633C5A551FEE845000BA66CB /* LoginVC.swift in Sources */,
 				6314B8E71FECB4990050D88B /* GradientView.swift in Sources */,
 				636966651FEC8E7B007567E8 /* ChannelVC.swift in Sources */,
