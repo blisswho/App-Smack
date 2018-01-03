@@ -37,7 +37,9 @@ class ProfileVC: UIViewController {
     func setupView() {
         // Show users image
         
-        print("NAME: "+UserDataService.instance.name)
+        print("USER DATA DID CHANGE (ProfileVC): "+UserDataService.instance.avatarColor)
+        print("USER DATA DID CHANGE (ProfileVC): "+UserDataService.instance.avatarName)
+        
         profileImg.image = UIImage(named: UserDataService.instance.avatarName)
         profileImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
         userName.text = UserDataService.instance.name
@@ -51,14 +53,5 @@ class ProfileVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -298,7 +298,14 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="mJF-Lp-V51" eventType="touchUpInside" id="V1h-VT-DhU"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IyE-ek-Jar">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -307,15 +314,20 @@
                             <constraint firstItem="jMg-4K-PWa" firstAttribute="top" secondItem="EDY-G4-Zfa" secondAttribute="bottom" constant="40" id="Enc-1z-wqQ"/>
                             <constraint firstItem="IP4-71-1O9" firstAttribute="top" secondItem="jMg-4K-PWa" secondAttribute="bottom" id="Gb6-Tg-fQM"/>
                             <constraint firstItem="aJS-I9-oMh" firstAttribute="top" secondItem="SKC-SR-lxh" secondAttribute="top" constant="8" id="GkY-Cl-Ie9"/>
+                            <constraint firstItem="IyE-ek-Jar" firstAttribute="centerY" secondItem="39Q-Ml-L1J" secondAttribute="centerY" constant="-100" id="Mbw-pa-bDo"/>
                             <constraint firstItem="SKC-SR-lxh" firstAttribute="trailing" secondItem="aJS-I9-oMh" secondAttribute="trailing" constant="16" id="V4r-7R-lNZ"/>
                             <constraint firstItem="IP4-71-1O9" firstAttribute="centerX" secondItem="39Q-Ml-L1J" secondAttribute="centerX" id="WSN-S1-LIE"/>
                             <constraint firstItem="EDY-G4-Zfa" firstAttribute="centerX" secondItem="39Q-Ml-L1J" secondAttribute="centerX" id="cbx-b1-15q"/>
                             <constraint firstItem="YjF-lF-Kuw" firstAttribute="centerX" secondItem="39Q-Ml-L1J" secondAttribute="centerX" id="n7T-LI-RjR"/>
                             <constraint firstItem="jMg-4K-PWa" firstAttribute="centerX" secondItem="39Q-Ml-L1J" secondAttribute="centerX" id="oFO-qu-vXk"/>
+                            <constraint firstItem="IyE-ek-Jar" firstAttribute="centerX" secondItem="39Q-Ml-L1J" secondAttribute="centerX" id="ow7-XB-Dsn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SKC-SR-lxh"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="gw1-Vl-cO6" id="BKn-6b-t0n"/>
+                        <outlet property="spinner" destination="IyE-ek-Jar" id="A4D-G4-0jh"/>
+                        <outlet property="usernameTxt" destination="6Ke-j5-hXH" id="Mib-06-4kt"/>
                         <segue destination="WH8-7T-baE" kind="show" identifier="toCreateAccount" id="Wwd-s5-ZvU"/>
                     </connections>
                 </viewController>
