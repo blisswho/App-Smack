@@ -15,6 +15,7 @@
 		634FEAB61FEECF1F009C38C0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634FEAB41FEEB8DD009C38C0 /* Alamofire.framework */; };
 		634FEAB81FEF0AD9009C38C0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634FEAB71FEF0AD9009C38C0 /* RoundedButton.swift */; };
 		63581D111FFC92B800CC0D55 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63581D101FFC92B800CC0D55 /* Message.swift */; };
+		63581D131FFC9A4800CC0D55 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63581D121FFC9A4800CC0D55 /* KeyboardBoundView.swift */; };
 		636966631FEC8E6B007567E8 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636966621FEC8E6B007567E8 /* ChatVC.swift */; };
 		636966651FEC8E7B007567E8 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636966641FEC8E7B007567E8 /* ChannelVC.swift */; };
 		637176171FFC6C3000AF92E1 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637176161FFC6C3000AF92E1 /* MessageService.swift */; };
@@ -48,6 +49,7 @@
 		634FEAB41FEEB8DD009C38C0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/Smack-awrdycuzjoznglcisqwnxecrnbqu/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		634FEAB71FEF0AD9009C38C0 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		63581D101FFC92B800CC0D55 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		63581D121FFC9A4800CC0D55 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		636966621FEC8E6B007567E8 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		636966641FEC8E7B007567E8 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		637176161FFC6C3000AF92E1 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				63C6CCD41FF07C9B00A2B0E7 /* AvatarCell.swift */,
 				63BDEB681FFA984C00D2313F /* CircleImage.swift */,
 				6371761A1FFC715100AF92E1 /* ChannelCell.swift */,
+				63581D121FFC9A4800CC0D55 /* KeyboardBoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63581D131FFC9A4800CC0D55 /* KeyboardBoundView.swift in Sources */,
 				637176241FFC7E9300AF92E1 /* SocketService.swift in Sources */,
 				63BDEB6C1FFAA8F900D2313F /* ProfileVC.swift in Sources */,
 				6371761B1FFC715100AF92E1 /* ChannelCell.swift in Sources */,

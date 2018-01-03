@@ -70,21 +70,43 @@
                                     <constraint firstAttribute="bottom" secondItem="KN8-sC-9Re" secondAttribute="bottom" constant="12" id="xYT-b5-NNa"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iTf-Sh-mlI">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6br-ad-Bj4"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xt6-ZX-L03">
+                                <rect key="frame" x="337" y="632" width="30" height="30"/>
+                                <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendMsgPressed:" destination="ysr-z1-FhG" eventType="touchUpInside" id="LSE-Wq-ZzX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="S0y-Xq-7A9" firstAttribute="trailing" secondItem="Wmd-7c-C5O" secondAttribute="trailing" id="KcA-aN-HTb"/>
                             <constraint firstItem="S0y-Xq-7A9" firstAttribute="leading" secondItem="Wmd-7c-C5O" secondAttribute="leading" id="TeA-gk-ZjS"/>
                             <constraint firstItem="S0y-Xq-7A9" firstAttribute="top" secondItem="gqZ-io-kJC" secondAttribute="top" id="apd-TH-FMv"/>
+                            <constraint firstItem="Xt6-ZX-L03" firstAttribute="centerY" secondItem="iTf-Sh-mlI" secondAttribute="centerY" id="dKX-Pr-LoW"/>
+                            <constraint firstItem="Wmd-7c-C5O" firstAttribute="trailing" secondItem="iTf-Sh-mlI" secondAttribute="trailing" id="fJB-sc-F3O"/>
                             <constraint firstItem="S0y-Xq-7A9" firstAttribute="top" secondItem="gqZ-io-kJC" secondAttribute="top" id="hnD-7e-iwd"/>
+                            <constraint firstItem="Wmd-7c-C5O" firstAttribute="trailing" secondItem="Xt6-ZX-L03" secondAttribute="trailing" constant="8" id="qfY-U9-xWf"/>
                             <constraint firstItem="S0y-Xq-7A9" firstAttribute="trailing" secondItem="Wmd-7c-C5O" secondAttribute="trailing" id="rW7-mI-bKQ"/>
                             <constraint firstItem="S0y-Xq-7A9" firstAttribute="leading" secondItem="Wmd-7c-C5O" secondAttribute="leading" id="wup-Dx-gO4"/>
+                            <constraint firstItem="iTf-Sh-mlI" firstAttribute="leading" secondItem="Wmd-7c-C5O" secondAttribute="leading" id="yYR-tY-Mth"/>
+                            <constraint firstItem="iTf-Sh-mlI" firstAttribute="bottom" secondItem="Wmd-7c-C5O" secondAttribute="bottom" id="zDq-Q2-k8K"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wmd-7c-C5O"/>
                     </view>
                     <connections>
                         <outlet property="channelNameLbl" destination="mN7-JB-XLj" id="NEl-mj-bFp"/>
                         <outlet property="menuBtn" destination="KN8-sC-9Re" id="GOr-T6-qFn"/>
+                        <outlet property="messageTxtBox" destination="iTf-Sh-mlI" id="3EV-py-J4o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RjJ-DC-QXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -614,6 +636,7 @@
         <image name="closeButton" width="28" height="28"/>
         <image name="menuProfileIcon" width="99" height="99"/>
         <image name="profileDefault" width="192" height="192"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBack" width="28" height="28"/>
         <image name="smackBurger" width="40" height="40"/>
         <image name="smackLogo" width="48" height="40"/>
