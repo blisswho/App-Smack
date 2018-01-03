@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Message {
+struct Message : Decodable {
     public private(set) var message: String!
     public private(set) var username: String!
     public private(set) var channelId: String!

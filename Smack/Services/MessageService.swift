@@ -71,11 +71,14 @@ class MessageService {
                         let message = Message(message: messageBody, username: userName, channelId: channelId, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: id, timeStamp: timeStamp)
                         self.messages.append(message)
                     }
+                    
                     print(self.messages)
                     completion(true)
                 }
             } else {
+                print("something is fucking wrong")
                 debugPrint(response.result.error as Any)
+                print("end of something is fuckign wrong")
                 completion(false)
             }
         }
