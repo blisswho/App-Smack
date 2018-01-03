@@ -37,9 +37,6 @@ class ProfileVC: UIViewController {
     func setupView() {
         // Show users image
         
-        print("USER DATA DID CHANGE (ProfileVC): "+UserDataService.instance.avatarColor)
-        print("USER DATA DID CHANGE (ProfileVC): "+UserDataService.instance.avatarName)
-        
         profileImg.image = UIImage(named: UserDataService.instance.avatarName)
         profileImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
         userName.text = UserDataService.instance.name
