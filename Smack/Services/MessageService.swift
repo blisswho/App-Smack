@@ -16,6 +16,7 @@ class MessageService {
     
     var channels = [Channel]() //Array of channels
     var messages = [Message]()
+    var unreadChannels = [String]()
     var selectedChannel : Channel?
     
     func findAllChannel(completion: @escaping CompletionHandler) {
